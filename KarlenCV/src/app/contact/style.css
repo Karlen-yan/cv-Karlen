@@ -1,0 +1,17 @@
+.cv-content h1{
+  color: #0146ad;
+}
+.contact__container{
+  margin: 25px auto;
+  background-color: #0146ad04;
+  
+}
+.contact__container li{
+  text-decoration: none;
+  list-style: none;
+  padding: 15px;
+  font-weight: 900;
+}
+.contact__container li a{
+  color:#0146ad;
+}

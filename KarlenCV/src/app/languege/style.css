@@ -1,0 +1,20 @@
+.cv-content h1{
+  color: #0146ad;
+}
+.len__container{
+  margin: 25px auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+.len__container div{
+  padding: 5px;
+  margin-left: 25px;
+}
+.len__container div span{
+  font-weight: 900;
+    
+}
+.icon__flags{
+  margin: 20px;
+}

@@ -1,0 +1,14 @@
+.cv-content h1{
+  color: #0146ad;
+}
+.cv__container-text{
+  background-color:#ebecf0;
+  padding: 5px;
+  margin-top: 10px;
+}
+.cv__container-text h2{
+  background-color: #0146ad;
+  color: white;
+  padding: 5px;
+}
+

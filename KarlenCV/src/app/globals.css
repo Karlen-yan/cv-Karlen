@@ -1,0 +1,268 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebecf0;
+}
+
+.container {
+  display: flex;
+  border: none;
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.601), 1px 1px 50px 5px white,
+    3px 3px 600px 2px white, 4px 4px 650px 1px #0146ad;
+  justify-content: space-between;
+  width: 70%;
+  min-height: 600px;
+  margin: 15px auto;
+  padding: 5px;
+  flex-direction: row;
+  margin-top: 30px;
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .menu li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media (max-width: 900px) {
+  .menu.open {
+    display: flex;
+    max-width: 74%;
+  }
+}
+.img {
+  width: 200px;
+  border: 1px solid silver;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 20px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: none;
+  }
+
+  .open {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    text-decoration: none;
+  }
+}
+
+.img {
+  width: 200px;
+  border: 1px solid silver;
+}
+
+.menu li {
+  list-style: none;
+  background-color: #606e8c;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  border: solid 2px silver;
+  border-radius: 30px 0 30px 0;
+  padding: 5px 20px 5px 20px;
+  flex-direction: row;
+}
+.menu li:hover {
+  background-color: #0146ad;
+}
+.menu a {
+  text-decoration: none;
+  text-align: right;
+  width: 100%;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.cv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 200px;
+  border: 1px solid silver;
+}
+
+.cv-content {
+  flex-grow: 1;
+  padding-left: 15%;
+}
+
+.cv-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cv-content p {
+  margin-bottom: 20px;
+}
+
+.cv-content ul {
+  margin-bottom: 20px;
+}
+
+.cv-content li {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+/* timer  */
+.timer__container {
+  position: relative;
+}
+.timer__item {
+  position: fixed;
+  right: 33px;
+  top: 0;
+  width: 145px;
+  height: 80px;
+  color: white;
+  text-align: center;
+  background-color: #606e8c0c;
+}
+.timer__item h2 {
+  font-size: 15px;
+}
+.timer__item h1 {
+  text-shadow: 0 0 15px #0146ad, 1px 1px 2px black;
+  font-size: 40px;
+  font-weight: 500;
+}
+.timer__item p {
+  font-size: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin: 10px;
+}
+/* index page icons  */
+.about__continer h1 {
+  background-color: #0146ad;
+  text-shadow: 0 0 14px white, 1px 1px 15px black;
+  color: white;
+  padding: 15px;
+}
+.about__continer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  margin: 10px;
+}
+.about__continer-icons * {
+  flex-basis: 20%;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* no  - select  */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* button descargas */
+.content div button {
+  background-color: #0146ad;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.content div button:hover {
+  background-color: #4343437c;
+}
+
+/* button languege */
+.language-buttons {
+  position: relative;
+}
+.language-buttons * {
+  border: none;
+  background-color: #0146ad;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.language-buttons button[disabled] {
+  background-color: #43434371;
+}
+.language-buttons *:hover {
+  background-color: #ebecf0;
+  color: #0146ad;
+}
