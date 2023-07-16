@@ -2,6 +2,11 @@
   "name": "karlen-cv",
   "version": "0.1.0",
   "private": true,
+  "payload": {
+    "version": "9.0.5-canary.2",
+    "isDevelopment": false
+  }
+  ,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
